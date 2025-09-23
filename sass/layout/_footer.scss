@@ -6,7 +6,14 @@
     flex-direction: column;
     background-color: #437057;
     color: #F8F8F8;
-    padding-top: 30px;
+    padding: 20px;
+    margin-top: 50px;
+    height: 100px;
+    @include mixins.mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
     &__about{
         display: flex;
         justify-content: space-evenly;
